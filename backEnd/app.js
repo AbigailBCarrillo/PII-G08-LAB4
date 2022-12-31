@@ -9,7 +9,7 @@ const DB_USER = "laboratorio2"
 const DB_PASSWORD = "grupo08"
 
 app.use(express.json())
-app.use(cors({origin: "http://localhost:4200"}))
+app.use(cors({origin: "http://localhost:5000"}))
 
 app.get('/', (req, res) => {
     res.json ({ message: 'Bienvenido a la pagina principal de clientes'})
