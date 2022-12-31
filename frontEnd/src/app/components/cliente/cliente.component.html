@@ -1,0 +1,53 @@
+<h2>Clientes</h2>
+<div>
+    <form #clienteForm="ngForm" (ngSubmit)="addCliente(clienteForm)">
+        <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="selectedCliente._id">
+        <div>
+            <input type="text" name="dni" #dni="ngModel" [(ngModel)]="selectedCliente.dni" placeholder="Ingrese su dni">
+        </div>
+        <div>
+            <input type="text" name="apellidos" #apellidos="ngModel" [(ngModel)]="selectedCliente.apellidos" placeholder="Ingrese sus apellidos">
+        </div>
+        <div>
+            <input type="text" name="nombres" #nombres="ngModel" [(ngModel)]="selectedCliente.nombres" placeholder="Ingrese sus nombres">
+        </div>
+        <div>
+            <input type="text" name="edad" #edad="ngModel" [(ngModel)]="selectedCliente.edad" placeholder="Ingrese su edad">
+        </div>
+        <div>
+            <input type="text" name="salario" #salario="ngModel" [(ngModel)]="selectedCliente.salario" placeholder="Ingrese su salario">
+        </div>
+        <div>
+            <button>Enviar</button>
+            <button (click)="resetForm(clienteForm)">Borrar</button>
+        </div>
+    </form>
+</div>
+
+<div>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Dni</th>
+            <th>Apellidos</th>
+            <th>Nombres</th>
+            <th>Edad</th>
+            <th>Salario</th>
+            <td>Ajustes</td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of clients; index as i">
+                <td> {{ i + 1 }} </td>
+                <td> {{ item.dni}} </td>
+                <td> {{ item.apellidos}} </td>
+                <td> {{ item.nombres}} </td>
+                <td> {{ item.edad}} </td>
+                <td> {{ item.salario}} </td>
+                <td>
+                    <a href="#" (click)="editCliente(item)">editar</a>
+                    <a href="#" (click)="deleteCliente(item)">borrar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
