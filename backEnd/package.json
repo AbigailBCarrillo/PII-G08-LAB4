@@ -1,0 +1,25 @@
+{
+  "name": "pii-g08-laboratorio2",
+  "version": "1.0.0",
+  "description": "En este repositorio se encuentra el código correspondiente al Laboratorio 2 del curso de Programación II realizado por el grupo 8 integrado por: -Calderón Alvarado, Jeremy Lorenzo. -Carrillo Guevara, Abigail Bibiana. -Cóndor Flores, César Emilio. -Solon Aquino, Jashua Jafet.",
+  "main": "Cliente.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremycalderon/PII-G08-Laboratorio2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremycalderon/PII-G08-Laboratorio2/issues"
+  },
+  "homepage": "https://github.com/jeremycalderon/PII-G08-Laboratorio2#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20"
+  }
+}
