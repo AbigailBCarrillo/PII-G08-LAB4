@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "name": "pii-g08-lab4",
+  "description": "En este repositorio se encuentra el código correspondiente al Laboratorio 4 del curso de Programación II realizado por el grupo 8 integrado por:\r -Calderón Alvarado, Jeremy Lorenzo.\r -Carrillo Guevara, Abigail Bibiana.\r -Cóndor Flores, César Emilio.\r -Solon Aquino, Jashua Jafet.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbigailBCarrillo/PII-G08-LAB4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbigailBCarrillo/PII-G08-LAB4/issues"
+  },
+  "homepage": "https://github.com/AbigailBCarrillo/PII-G08-LAB4#readme"
+}

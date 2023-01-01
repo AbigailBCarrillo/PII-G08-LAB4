@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Cliente } from 'src/app/models/cliente.model';
 import { ClienteService } from 'src/app/services/cliente.service';
 import { NgForm } from '@angular/forms';
-import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-cliente',
